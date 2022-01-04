@@ -18,3 +18,7 @@ void draw(){
     Cars.get(i).Move();
   }
 }
+
+void mousePressed(){
+  Cars.add(new Car(mouseX, mouseY, random(-3,3), random(-3,3),  int(random(255)), int(random(255)), int(random(255))));
+}
